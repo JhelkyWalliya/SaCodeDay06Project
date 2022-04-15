@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=.0">
+    <title>MY Galleri - Easy</title>
+
+
+    <!--ini adalah penghubung style CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--ini adalah penghubung/. style CSS-->
+
+
+
+</head>
+<!--ini adalah body badan pad web itu sendri-->
+<body>
+
+    <div class="full-img" id="fullImgBox">
+
+        <!--memasukan semua gambar -->
+        <img src="image/img1.jpg" id="fullImg">
+
+
+        <!--membuat span atau exit pada web-->
+        <span onclick="closefullImg()" >X</span>
+        <!--membuat span atau /. exit pada web-->
+
+    </div>
+    <div class="image-img">
+        <img src="image/img1.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img2.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img3.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img4.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img5.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img6.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img7.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img8.jpg" onclick="openFullImg(this.src)">
+    
+
+
+
+
+    </div>
+
+    <!--INI adalah java script-->
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullIng = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closefullImg() {
+
+            fullImgBox.style.display = "none";
+
+        }
+
+    </script>
+    <!--/...INI adalah java script-->
+
+</body>
+<!--ini adalah body badan pada web itu sendri-->
+
+</html>

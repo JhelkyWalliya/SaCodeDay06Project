@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+/*ini adalah warna latar belakan web yang di namakan body*/
+body{
+    background: #ecf4fb;
+
+}
+/*ini adalah untuk memangil gambar dan membuat gambar sejajar*/
+.image-img{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+
+
+}
+/*ini adalah membuat gambar ke tengah layar web kita*/
+/*bakan kolo kita kecilkan layar web gambar ter urut sesui layar kita*/
+.image-img img{
+    width: 100%;
+    cursor: pointer;
+
+}
+/* hover adalah membuat efek atau warna pada gambar dan text CSS  bergerak secara miring*/
+.image-img img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75 px rgba(35, 51, 153, 0.2);
+
+}
+/*  membuat bayangan dalam gambar tampilan web*/
+.full-img{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none ;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+
+}
+
+/*membuat gambar bayangan ke tengga*/
+.full-img img{
+    width: 90%;
+    max-width: 500px;
+
+}
+/*membuat tampilan exit dan warna exit atur posisi exit*/
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+
+
+
+
+}
